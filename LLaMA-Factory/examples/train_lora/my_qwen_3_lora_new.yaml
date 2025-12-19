@@ -1,0 +1,37 @@
+model_name_or_path: /root/bayes-tmp/demo/models/Qwen3-1.7B  # 预训练模型路径
+
+stage: sft                      # 训练阶段，sft表示监督微调阶段
+do_train: true                 # 是否进行训练
+finetuning_type: lora          # 微调类型，使用LoRA方法
+lora_rank: 8
+lora_target: all               # LoRA微调目标，all表示所有层都微调
+pref_beta: 0.1
+pref_loss: sigmoid
+
+dataset: output_sharegpt_30       # 训练数据集路径，需替换为实际的ShareGPT格式数据集
+template: qwen3_nothink        # 使用的模板名称，如无对应模板可用默认
+
+cutoff_len: 1024               # 输入序列最大长度，超过截断
+max_samples: 5000                # 最大训练样本数，限制为5000条
+overwrite_cache: true          # 是否覆盖缓存，方便重新预处理数据
+preprocessing_num_workers: 4   # 预处理数据时的并行线程数
+
+output_dir: saves/qwen3-1.7b_30/lora/sft  # 模型输出保存路径
+logging_steps: 5                # 训练日志记录频率，每 5 步记录一次
+save_steps: 100                 # 模型保存频率，每 500 步保存一次
+plot_loss: true                # 是否绘制训练损失曲线图
+overwrite_output_dir: yes    # 是否覆盖已有输出目录
+
+per_device_train_batch_size: 2    # 每个设备的训练批大小
+gradient_accumulation_steps: 8    # 梯度累积步数，实际等效批量大小为2*8=16
+learning_rate: 5e-4            # 学习率
+num_train_epochs: 2.0             # 训练轮数
+lr_scheduler_type: cosine         # 学习率调度器类型，cosine余弦退火
+warmup_ratio: 0.1                 # 预热比例，训练初期逐步升高学习率10%
+bf16: true                       # 是否使用bfloat16混合精度训练
+ddp_timeout: 180000000            # 分布式训练超时时间（毫秒）
+
+val_size: 0.05                   # 验证集比例，5%作为验证集
+per_device_eval_batch_size: 1   # 每个设备的验证批大小
+eval_strategy: steps            # 验证策略，按步数进行验证
+eval_steps: 10                  # 验证频率，每2步进行一次验证

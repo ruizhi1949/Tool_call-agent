@@ -1,0 +1,2082 @@
+[
+  {
+    "time": 1.9473041519522667,
+    "memory": 1317.02734375,
+    "gpu_memory": 6087.10400390625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "把微信的语言设置改成英文吧，我朋友看不懂中文",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")"
+    ],
+    "predictions": [
+      "SwitchLanguage(AppName=\"微信\", LanguageType=\"英文\", ActionType=\"更改\")"
+    ]
+  },
+  {
+    "time": 1.2092723734676838,
+    "memory": 1026.95703125,
+    "gpu_memory": 6086.82763671875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我看看周围有什么WiFi能用",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchWlan()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchWlan(DeviceType=\"ALL\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SearchWlan()"
+    ],
+    "predictions": [
+      "SearchWlan(DeviceType=\"ALL\")"
+    ]
+  },
+  {
+    "time": 1.4916918240487576,
+    "memory": 1026.884765625,
+    "gpu_memory": 6087.21435546875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把手机的自动亮度调节关掉，现在太亮了",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"
+    ],
+    "predictions": [
+      "AutoLuminanceOnOff(DeviceType=\"手机屏幕\", ActionType=False)"
+    ]
+  },
+  {
+    "time": 1.512899748980999,
+    "memory": 1026.9609375,
+    "gpu_memory": 6087.32470703125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把平板屏幕的亮度调到60%吧，有点刺眼",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)"
+    ],
+    "predictions": [
+      "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=60)"
+    ]
+  },
+  {
+    "time": 1.4855158030986786,
+    "memory": 1026.56640625,
+    "gpu_memory": 6086.88330078125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我看看现在用的什么输入法",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckInputMethod()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=\"系统\", InputMethodName=\"系统输入法\", ActionType=\"切换\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckInputMethod()"
+    ],
+    "predictions": [
+      "SwitchInputMethod(AppName=\"系统\", InputMethodName=\"系统输入法\", ActionType=\"切换\")"
+    ]
+  },
+  {
+    "time": 1.203379638493061,
+    "memory": 1026.8828125,
+    "gpu_memory": 6087.21435546875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，麻烦帮我把家里的智能音箱关掉",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ShutDown(DeviceType=\"音箱\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ShutDown(DeviceType=\"音箱\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ShutDown(DeviceType=\"音箱\")"
+    ],
+    "predictions": [
+      "ShutDown(DeviceType=\"音箱\")"
+    ]
+  },
+  {
+    "time": 1.2029541991651058,
+    "memory": 1026.505859375,
+    "gpu_memory": 6086.82763671875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把蓝牙打开一下，谢谢",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=True)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "BlueToothOnOff(ActionType=True)"
+    ],
+    "predictions": [
+      "BlueToothOnOff(ActionType=True)"
+    ]
+  },
+  {
+    "time": 1.1576948054134846,
+    "memory": 1026.517578125,
+    "gpu_memory": 6086.77294921875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我查一下王总的联系方式",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=\"王总\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "Search(Content=\"王总\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckContact(Contact=\"王总\")"
+    ],
+    "predictions": [
+      "Search(Content=\"王总\")"
+    ]
+  },
+  {
+    "time": 1.635856706649065,
+    "memory": 1026.85546875,
+    "gpu_memory": 6087.15869140625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我看看明天上午9点叫我开会的闹钟开了没有",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckAlarm(Time=\"明天09:00\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckAlarm(Time=\"明天上午9点\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"
+    ],
+    "predictions": [
+      "CheckAlarm(Time=\"明天09:00\", Content=\"开会\", RangeType=\"明天\", State=\"已开启\")"
+    ]
+  },
+  {
+    "time": 1.305916916579008,
+    "memory": 1026.611328125,
+    "gpu_memory": 6086.93798828125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把车载蓝牙断开一下，谢谢",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BlueToothOnOff(DeviceType=\"车载\", ActionType=False)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ConnectBlueTooth(DeviceType=\"车载\", ActionType=False)"
+    ],
+    "predictions": [
+      "BlueToothOnOff(DeviceType=\"车载\", ActionType=False)"
+    ]
+  },
+  {
+    "time": 1.4568466544151306,
+    "memory": 1026.6474609375,
+    "gpu_memory": 6087.04833984375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "能不能帮我把手机通话音量调高一点？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)"
+    ],
+    "predictions": [
+      "ControlSound(VolumeType=\"通话音量\", ActionType=\"增加\", Percentage=15)"
+    ]
+  },
+  {
+    "time": 1.4764794819056988,
+    "memory": 1027.4013671875,
+    "gpu_memory": 6087.82080078125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "能不能帮我把微信里的输入法改成百度输入法？现在用的是系统自带的，打字不太顺手。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"
+    ],
+    "predictions": [
+      "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"百度输入法\", ActionType=\"切换\")"
+    ]
+  },
+  {
+    "time": 1.681664828211069,
+    "memory": 1027.2080078125,
+    "gpu_memory": 6087.65576171875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我给王总发个微信，说下午的会议改到3点了，用我工作卡发",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")"
+    ],
+    "predictions": [
+      "SendMessage(AppName=\"微信\", Contact=\"王总\", PhoneCard=\"工作卡\", Content=\"下午的会议改到3点\")"
+    ]
+  },
+  {
+    "time": 1.4530489556491375,
+    "memory": 1027.486328125,
+    "gpu_memory": 6087.87646484375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "您好，麻烦帮我截取当前正在使用的浏览器窗口画面，并保存在桌面\"工作资料\"文件夹里，谢谢！",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")"
+    ],
+    "predictions": [
+      "CaptureScreenshot(CaptureArea=\"当前窗口\", SavePath=\"~/Desktop/工作资料\")"
+    ]
+  },
+  {
+    "time": 1.1547428220510483,
+    "memory": 1026.76953125,
+    "gpu_memory": 6087.04833984375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "手机快没电了，帮我打开省电模式",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "BatterySavingMode(ActionType=True)"
+    ],
+    "predictions": [
+      "BatterySavingMode(ActionType=True)"
+    ]
+  },
+  {
+    "time": 3.6502816900610924,
+    "memory": 1027.697265625,
+    "gpu_memory": 6087.98681640625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "这个淘宝老是弹广告，烦死了，帮我把它今天的所有通知都清掉，然后直接卸载了吧，我不想用了。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CleanAppNotification(AppName=\"淘宝\", TimeRange=\"今天\")|UninstallApp(AppName=\"淘宝\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "UninstallApp(AppName=\"淘宝\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CleanAppNotification(AppName=\"淘宝\", TimeRange=\"今天\")|UninstallApp(AppName=\"淘宝\")"
+    ],
+    "predictions": [
+      "UninstallApp(AppName=\"淘宝\")"
+    ]
+  },
+  {
+    "time": 1.9286709539592266,
+    "memory": 1027.6875,
+    "gpu_memory": 6088.04150390625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把那个叫“数据统计.xlsx”的文件删了，另外把微信的麦克风权限也关掉，我暂时用不上。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "DeleteFile(FileName=\"数据统计.xlsx\")|ManageAppPermission(AppName=\"微信\", Function=\"麦克风\", ActionType=False)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "DeleteFile(FileName=\"数据统计.xlsx\", FilePath=\"桌面/文件夹\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "DeleteFile(FileName=\"数据统计.xlsx\")|ManageAppPermission(AppName=\"微信\", Function=\"麦克风\", ActionType=False)"
+    ],
+    "predictions": [
+      "DeleteFile(FileName=\"数据统计.xlsx\", FilePath=\"桌面/文件夹\")"
+    ]
+  },
+  {
+    "time": 2.2340952828526497,
+    "memory": 1028.666015625,
+    "gpu_memory": 6091.2568359375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我准备开个会，你帮我把系统调成深色模式，然后打开勿扰。哦对了，顺便给我的“会议纪要.docx”这个文件建个快捷方式，就用Ctrl+M吧。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=\"深色模式\")|QuietModeOnOff(ActionType=\"设置为\")|AddShortCutKey(Function=\"创建会议纪要.docx的快捷方式\",NewKeyCombination=\"Ctrl+M\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateShortCutKey(Function=\"创建快捷方式\", NewKeyCombination=\"Ctrl+M\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SetSystemTheme(ThemeType=\"深色模式\")|QuietModeOnOff(ActionType=\"设置为\")|AddShortCutKey(Function=\"创建会议纪要.docx的快捷方式\",NewKeyCombination=\"Ctrl+M\")"
+    ],
+    "predictions": [
+      "CreateShortCutKey(Function=\"创建快捷方式\", NewKeyCombination=\"Ctrl+M\")"
+    ]
+  },
+  {
+    "time": 2.325286917388439,
+    "memory": 1028.654296875,
+    "gpu_memory": 6090.935546875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，你帮我下载一个高德地图，然后记得把它的定位权限改成仅在使用时允许。哦对了，顺便把设备的数据共享功能给我关了，我不喜欢分享我的使用记录。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "DownloadApp(AppName=\"高德地图\")|SetAppPermission(AppName=\"高德地图\",PermissionType=\"定位权限\",PermissionStatus=\"仅在使用时允许\")|SwitchDataSharing(ActionType=False)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchDataSharing(ActionType=\"False\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "DownloadApp(AppName=\"高德地图\")|SetAppPermission(AppName=\"高德地图\",PermissionType=\"定位权限\",PermissionStatus=\"仅在使用时允许\")|SwitchDataSharing(ActionType=False)"
+    ],
+    "predictions": [
+      "SwitchDataSharing(ActionType=\"False\")"
+    ]
+  },
+  {
+    "time": 3.0039031989872456,
+    "memory": 1028.767578125,
+    "gpu_memory": 6092.220703125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，帮我准备一下工作环境。先把系统音量调到20%，屏幕分辨率给我改成1920x1080，然后把全局字体都设置成粗体，哦对了，再帮我开启多窗口模式。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=\"系统音量\",ActionType=\"调到\",Percentage=\"20\")|SetResolution(Resolution=\"1920x1080\")|SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"全局\")|MultipleWindowModeOnOff(ActionType=True)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "MultipleWindowModeOnOff(ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ControlSound(VolumeType=\"系统音量\",ActionType=\"调到\",Percentage=\"20\")|SetResolution(Resolution=\"1920x1080\")|SwitchFontWeight(ActionType=\"设置\",FontWeight=\"粗体\",AppName=\"全局\")|MultipleWindowModeOnOff(ActionType=True)"
+    ],
+    "predictions": [
+      "MultipleWindowModeOnOff(ActionType=True)"
+    ]
+  },
+  {
+    "time": 2.5755600556731224,
+    "memory": 1029.2412109375,
+    "gpu_memory": 6093.6669921875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，我马上要开会了，你帮我准备一下。先把屏幕分辨率改成1920x1080，然后连上我的蓝牙鼠标。哦对了，为了防止意外，把微信访问相机给它关了。最后，顺便查一下电量够不够用。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SetResolution(Resolution=\"1920x1080\")|ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)|ManageAppPermission(AppName=\"微信\", Function=\"相机\", ActionType=False)|CheckBatteryLevel()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryLevel()",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SetResolution(Resolution=\"1920x1080\")|ConnectBlueTooth(DeviceType=\"鼠标\", ActionType=True)|ManageAppPermission(AppName=\"微信\", Function=\"相机\", ActionType=False)|CheckBatteryLevel()"
+    ],
+    "predictions": [
+      "CheckBatteryLevel()"
+    ]
+  },
+  {
+    "time": 2.9510864540934563,
+    "memory": 1030.208984375,
+    "gpu_memory": 6095.5947265625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，帮我办几件事。首先，查一下李经理的电话，然后用我的工作卡给他发条短信，告诉他会议推迟到下午三点。哦对了，再帮我搜一下“北京最好的烤鸭店”，顺便把“会议推迟”翻译成英文。最后，给我下载一个高德地图，我待会儿要用。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=\"李经理\")|SendMessage(AppName=\"短信\",Contact=\"李经理\",PhoneCard=\"工作卡\",Content=\"会议推迟到下午三点\")|Search(Content=\"北京最好的烤鸭店\")|Translate(Content=\"会议推迟\",SourceLanguage=\"自动检测\",TargetLanguage=\"英文\")|DownloadApp(AppName=\"高德地图\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "DownloadApp(AppName=\"高德地图\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckContact(Contact=\"李经理\")|SendMessage(AppName=\"短信\",Contact=\"李经理\",PhoneCard=\"工作卡\",Content=\"会议推迟到下午三点\")|Search(Content=\"北京最好的烤鸭店\")|Translate(Content=\"会议推迟\",SourceLanguage=\"自动检测\",TargetLanguage=\"英文\")|DownloadApp(AppName=\"高德地图\")"
+    ],
+    "predictions": [
+      "DownloadApp(AppName=\"高德地图\")"
+    ]
+  },
+  {
+    "time": 2.92467512562871,
+    "memory": 1029.732421875,
+    "gpu_memory": 6094.4697265625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，我准备开始工作了。帮我把电脑声音调小一点，大概20%就行。然后连上我的蓝牙键盘，顺便把振动关了，免得被打扰。哦对了，打开文件资源管理器，再给我设个一小时后的闹钟，提醒我该休息了。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=\"系统音量\",ActionType=\"设置为\",Percentage=\"20\")|ConnectBlueTooth(DeviceType=\"键盘\",ActionType=True)|VibrationModeOnOff(ActionType=False)|DesktopOnOff(DesktopName=\"文件资源管理器\",ActionType=True)|CreateAlarm(Time=\"15:00\",Content=\"休息\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CreateAlarm(Time=\"一小时后\", Content=\"休息\", RangeType=\"工作日\", State=\"已开启\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ControlSound(VolumeType=\"系统音量\",ActionType=\"设置为\",Percentage=\"20\")|ConnectBlueTooth(DeviceType=\"键盘\",ActionType=True)|VibrationModeOnOff(ActionType=False)|DesktopOnOff(DesktopName=\"文件资源管理器\",ActionType=True)|CreateAlarm(Time=\"15:00\",Content=\"休息\")"
+    ],
+    "predictions": [
+      "CreateAlarm(Time=\"一小时后\", Content=\"休息\", RangeType=\"工作日\", State=\"已开启\")"
+    ]
+  },
+  {
+    "time": 3.463987573981285,
+    "memory": 1028.962890625,
+    "gpu_memory": 6091.8994140625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，我准备开会了。帮我打开勿扰模式，然后把抖音和淘宝都关了。再连上我的蓝牙耳机，把系统声音也切过去。哦对了，顺便看看钉钉今天有没有什么新通知。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "QuietModeOnOff(ActionType=True)|AppOnOff(AppName=\"抖音\", ActionType=False)|AppOnOff(AppName=\"淘宝\", ActionType=False)|ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)|SwitchAudioEquipment(AppName=\"系统音频\", AudioType=\"bluetooth_headset\")|CheckAppNotification(AppName=\"钉钉\", TimeRange=\"今天\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckAppNotification(AppName=\"钉钉\", TimeRange=\"今天\", NotificationList=[])",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "QuietModeOnOff(ActionType=True)|AppOnOff(AppName=\"抖音\", ActionType=False)|AppOnOff(AppName=\"淘宝\", ActionType=False)|ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)|SwitchAudioEquipment(AppName=\"系统音频\", AudioType=\"bluetooth_headset\")|CheckAppNotification(AppName=\"钉钉\", TimeRange=\"今天\")"
+    ],
+    "predictions": [
+      "CheckAppNotification(AppName=\"钉钉\", TimeRange=\"今天\", NotificationList=[])"
+    ]
+  },
+  {
+    "time": 3.208352856338024,
+    "memory": 1030.76953125,
+    "gpu_memory": 6097.84375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，帮我个忙。先搜一下我的'年度总结报告.docx'，然后把它复制粘贴到桌面上。哦对了，顺便把浏览器窗口给我最大化，我再看一眼资料。弄完这些之后，给我的系统锁屏设置一个密码，就用'MyPresentationPassword123'吧，类型是锁屏密码。最后，再帮我看看现在还剩多少电。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "Search(Content=\"年度总结报告.docx\")|CopyFile(FileName=\"年度总结报告.docx\")|PasteFile(FileName=\"年度总结报告.docx\", FilePath=\"桌面\")|SwitchDesktopSize(DesktopName=\"浏览器\", DesktopSize=\"maximize\")|SetPassword(AppName=\"系统锁屏\", PasswordType=\"锁屏密码\", Password=\"MyPresentationPassword123\")|CheckBatteryLevel()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckBatteryLevel()",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "Search(Content=\"年度总结报告.docx\")|CopyFile(FileName=\"年度总结报告.docx\")|PasteFile(FileName=\"年度总结报告.docx\", FilePath=\"桌面\")|SwitchDesktopSize(DesktopName=\"浏览器\", DesktopSize=\"maximize\")|SetPassword(AppName=\"系统锁屏\", PasswordType=\"锁屏密码\", Password=\"MyPresentationPassword123\")|CheckBatteryLevel()"
+    ],
+    "predictions": [
+      "CheckBatteryLevel()"
+    ]
+  },
+  {
+    "time": 1.1332176953554154,
+    "memory": 1037.833984375,
+    "gpu_memory": 6118.08984375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我打开微信",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"微信\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"微信\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "我想切换到抖音，可以吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "确认您要切换到抖音应用吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对的，切换到抖音",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"抖音\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"抖音\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "如果现在电量充足的话，帮我启动王者荣耀吧",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "检测到当前电量充足，确认要打开王者荣耀吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "是的，开始游戏",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"王者荣耀\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlAppNotificationManager(AppName=\"王者荣耀\", NotificationType=\"Allow\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "那个看视频的蓝色图标应用",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是指腾讯视频应用吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "不是，是B站",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"B站\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"B站\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "我订完外卖了，切回刚才的音乐软件吧",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您之前使用的是QQ音乐还是网易云音乐？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "是网易云音乐",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"网易云音乐\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchApp(AppName=\"网易云音乐\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SwitchApp(AppName=\"微信\")",
+      "SwitchApp(AppName=\"抖音\")",
+      "SwitchApp(AppName=\"王者荣耀\")",
+      "SwitchApp(AppName=\"B站\")",
+      "SwitchApp(AppName=\"网易云音乐\")"
+    ],
+    "predictions": [
+      "SwitchApp(AppName=\"微信\")",
+      "SwitchApp(AppName=\"抖音\")",
+      "ControlAppNotificationManager(AppName=\"王者荣耀\", NotificationType=\"Allow\")",
+      "SwitchApp(AppName=\"B站\")",
+      "SwitchApp(AppName=\"网易云音乐\")"
+    ]
+  },
+  {
+    "time": 1.297264400869608,
+    "memory": 1029.4228515625,
+    "gpu_memory": 6092.5419921875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小张啊，我这会儿开车太累了想休息会，能不能让车载系统先睡一会？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想让车载娱乐系统进入休眠模式吗？还是整个车载系统(包括空调)都待机？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchAutosyncTimeAndDate(ActionType=True)",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "就中控屏幕和音响关掉就行，空调还得开着",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "Sleep(DeviceType=\"车载\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchAudioEquipment(AppName=\"系统音频\", AudioType=\"默认设备\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "您是想让车载娱乐系统进入休眠模式吗？还是整个车载系统(包括空调)都待机？",
+      "Sleep(DeviceType=\"车载\")"
+    ],
+    "predictions": [
+      "SwitchAutosyncTimeAndDate(ActionType=True)",
+      "SwitchAudioEquipment(AppName=\"系统音频\", AudioType=\"默认设备\")"
+    ]
+  },
+  {
+    "time": 1.1706916093826294,
+    "memory": 1028.490234375,
+    "gpu_memory": 6090.29296875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我想上网但是没WiFi了，帮我弄下移动网络吧",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是希望开启手机的移动数据流量功能吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对对，开蜂窝数据就行",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "MobileDataOnOff(ActionType=True)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "MobileDataOnOff(ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "MobileDataOnOff(ActionType=True)"
+    ],
+    "predictions": [
+      "MobileDataOnOff(ActionType=True)"
+    ]
+  },
+  {
+    "time": 1.0509699881076813,
+    "memory": 1028.81640625,
+    "gpu_memory": 6090.775390625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我看下这个文档用的什么字体啊？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想查看当前文档的字体名称还是包括大小和样式在内的完整字体信息？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "就只要知道字体名称就行",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckFont()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckFont()",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckFont()"
+    ],
+    "predictions": [
+      "CheckFont()"
+    ]
+  },
+  {
+    "time": 1.4758098982274532,
+    "memory": 1029.34765625,
+    "gpu_memory": 6093.0244140625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我在微信里打字总弹出来百度输入法，能不能帮我换成搜狗的？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想将微信应用中的输入法从百度输入法永久切换到搜狗输入法吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对的，最好设置成默认输入法",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设置\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设为默认\")"
+    ],
+    "predictions": [
+      "SwitchInputMethod(AppName=\"微信\", InputMethodName=\"搜狗输入法\", ActionType=\"设置\")"
+    ]
+  },
+  {
+    "time": 1.3317303967972596,
+    "memory": 1034.576171875,
+    "gpu_memory": 6109.70703125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把显示器调亮一点",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "请问是要调亮电脑显示器吗？亮度需要增加多少百分比呢？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对，就是办公桌上的显示器，亮度增加20%吧",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=20)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLuminance(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=20)",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "晚上看平板太刺眼了",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想降低平板屏幕的亮度吗？需要自动调节还是手动设置？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "调到最暗，眼睛不舒服",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=0)",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "会议室投影仪能设为自动亮度吗？现在反光看不清",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlLuminance(DeviceType=\"屏幕\", ActionType=\"自动\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchLuminance(DeviceType=\"会议室投影仪\", ActionType=\"自动\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "ControlLuminance(DeviceType=\"显示器\", ActionType=\"增加\", Percentage=20)",
+      "ControlLuminance(DeviceType=\"平板屏幕\", ActionType=\"最小\")",
+      "ControlLuminance(DeviceType=\"屏幕\", ActionType=\"自动\")"
+    ],
+    "predictions": [
+      "SwitchLuminance(DeviceType=\"电脑屏幕\", ActionType=\"调到\", Percentage=20)",
+      "SwitchLuminance(DeviceType=\"平板屏幕\", ActionType=\"调到\", Percentage=0)",
+      "SwitchLuminance(DeviceType=\"会议室投影仪\", ActionType=\"自动\")"
+    ]
+  },
+  {
+    "time": 1.4048031568527222,
+    "memory": 1028.21875,
+    "gpu_memory": 6089.650390625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我的显示器对比度现在是啥样啊？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "请问您是想查询当前显示器的对比度设置吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对对，就是这个意思",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContrast(DeviceType=\"显示器\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=60)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckContrast(DeviceType=\"显示器\")"
+    ],
+    "predictions": [
+      "SwitchContrast(DeviceType=\"电脑屏幕\", ActionType=\"增强\", Percentage=60)"
+    ]
+  },
+  {
+    "time": 1.2606129050254822,
+    "memory": 1028.93359375,
+    "gpu_memory": 6091.8994140625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "晚上看屏幕太刺眼了，能帮我调暗点吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是希望切换为深色/夜间模式，还是仅调低屏幕亮度？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "就是那个黑色背景的模式，护眼的那种",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=\"深色模式\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SetSystemTheme(ThemeType=\"暗色模式\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "SetSystemTheme(ThemeType=\"深色模式\")"
+    ],
+    "predictions": [
+      "SetSystemTheme(ThemeType=\"暗色模式\")"
+    ]
+  },
+  {
+    "time": 1.2024904005229473,
+    "memory": 1040.595703125,
+    "gpu_memory": 6127.08837890625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我这边有个电话进来了，帮我接一下用免提模式",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，请问是直接使用免提接听吗？需要设置静音或预设回复吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "直接免提接听就行，不用静音",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True, Mode=\"免提\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True, Mode=\"免提\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "不好意思现在不方便，能帮我拒接这个电话吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "需要发送预设回复消息吗？比如\"稍后回电\"或\"正在开会\"？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "帮我回复\"正在开车，晚点联系\"",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=False, Response=\"正在开车，晚点联系\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"正在开车，晚点联系\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "电话响了但我在洗澡，咋整？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "可以帮您转接到蓝牙耳机，或者发送拒接回复？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "用浴室蓝牙音箱接吧",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True, Mode=\"蓝牙\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"蓝牙音箱\", ActionType=True)",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "把刚才那个推销电话拉黑！",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "检测到该请求需调用BlockCall工具，当前仅支持接听/拒接功能。要拒接此来电吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "那直接挂断别接",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=False)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AnswerCall(ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "AnswerCall(ActionType=True, Mode=\"免提\")",
+      "AnswerCall(ActionType=False, Response=\"正在开车，晚点联系\")",
+      "AnswerCall(ActionType=True, Mode=\"蓝牙\")",
+      "AnswerCall(ActionType=False)"
+    ],
+    "predictions": [
+      "AnswerCall(ActionType=True, Mode=\"免提\")",
+      "AnswerCall(ActionType=True, Mode=\"免提\", Response=\"正在开车，晚点联系\")",
+      "ConnectBlueTooth(DeviceType=\"蓝牙音箱\", ActionType=True)",
+      "AnswerCall(ActionType=True)"
+    ]
+  },
+  {
+    "time": 1.4576547890901566,
+    "memory": 1028.435546875,
+    "gpu_memory": 6090.29296875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我看看现在用的是什么输入法？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想确认当前正在使用的输入法类型吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对的，我想知道现在打字的键盘是哪个",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckInputMethod()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchInputMethod(AppName=\"系统\", InputMethodName=\"当前输入法\", ActionType=\"查看\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckInputMethod()"
+    ],
+    "predictions": [
+      "SwitchInputMethod(AppName=\"系统\", InputMethodName=\"当前输入法\", ActionType=\"查看\")"
+    ]
+  },
+  {
+    "time": 1.0732340961694717,
+    "memory": 1028.5,
+    "gpu_memory": 6090.4541015625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我的电脑最近有点卡，帮我看看是不是有系统更新没装？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想要检查当前可用的系统更新吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对对，帮我查一下更新状态",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckSystemUpdate()",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckSystemUpdate()"
+    ],
+    "predictions": [
+      "CheckSystemUpdate()"
+    ]
+  },
+  {
+    "time": 1.432731807231903,
+    "memory": 1029.17578125,
+    "gpu_memory": 6092.5419921875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我把这段中文翻译成英文",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "请问您要翻译的具体中文内容是什么？另外是否需要指定其他语言（如从日文译成中文等）？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "就是这句话：\"人工智能正在改变世界\"，其他信息按默认来",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "Translate(Content=\"人工智能正在改变世界\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "Translate(Content=\"人工智能正在改变世界\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "Translate(Content=\"人工智能正在改变世界\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"
+    ],
+    "predictions": [
+      "Translate(Content=\"人工智能正在改变世界\", SourceLanguage=\"中文\", TargetLanguage=\"英文\")"
+    ]
+  },
+  {
+    "time": 1.0465921498835087,
+    "memory": 1028.638671875,
+    "gpu_memory": 6090.935546875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我的回收站堆满了，帮我处理一下吧",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是想让我帮您清空回收站里的所有文件吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "是的，把那些没用的都永久删除掉",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "EmptyBin()",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "EmptyBin()",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "EmptyBin()"
+    ],
+    "predictions": [
+      "EmptyBin()"
+    ]
+  },
+  {
+    "time": 1.1416536085307598,
+    "memory": 1028.2060546875,
+    "gpu_memory": 6089.490234375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "手机快没电了，帮我弄下省电模式",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是需要开启省电模式对吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对对，赶紧开一下",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BatterySavingMode(ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "BatterySavingMode(ActionType=True)"
+    ],
+    "predictions": [
+      "BatterySavingMode(ActionType=True)"
+    ]
+  },
+  {
+    "time": 1.6251099929213524,
+    "memory": 1028.220703125,
+    "gpu_memory": 6089.8115234375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "帮我查一下王总的电话",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "您是要查询联系人\"王总\"的电话号码吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对的，就是上周开会的那位王总",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckContact(Contact=\"王总\")",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SearchWlan(DeviceType=\"WLAN网络名称\", Content=\"王总\", RangeType=\"上周\", State=\"已开启\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "CheckContact(Contact=\"王总\")"
+    ],
+    "predictions": [
+      "SearchWlan(DeviceType=\"WLAN网络名称\", Content=\"王总\", RangeType=\"上周\", State=\"已开启\")"
+    ]
+  },
+  {
+    "time": 3.114644303917885,
+    "memory": 1031.6484375,
+    "gpu_memory": 6099.93408203125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，我想个性化一下我的手机，先换个壁纸，要科技风的，然后把蓝牙打开。对了，再帮我把系统锁屏的指纹验证也打开。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，蓝牙和系统指纹解锁已经为您开启。关于科技风格的壁纸，您想从在线图库选择并设置为自动轮播吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对，就在线图库里选，每天自动换一次。顺便帮我把小说打开听一下。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SetWallPaper(OperationType=\"slideshow\",WallpaperSource=\"online\",StylePreference=\"tech\",ChangeFrequency=\"24\",ApplyScope=\"both\")|ControlMediaPlayback(AppName=\"voice\",ActionType=True)}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SetBiometricPassword(AppName=\"系统锁屏\", BiometricPasswordType=\"指纹识别\", OperationType=\"首次设置\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{SetWallPaper(OperationType=\"slideshow\",WallpaperSource=\"online\",StylePreference=\"tech\",ChangeFrequency=\"24\",ApplyScope=\"both\")|ControlMediaPlayback(AppName=\"voice\",ActionType=True)}"
+    ],
+    "predictions": [
+      "SetBiometricPassword(AppName=\"系统锁屏\", BiometricPasswordType=\"指纹识别\", OperationType=\"首次设置\")"
+    ]
+  },
+  {
+    "time": 1.2665142994374037,
+    "memory": 1032.533203125,
+    "gpu_memory": 6103.15185546875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "最近总感觉手机有点卡，你帮我看看是不是该更新系统了？",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，需要我为您检查并立即下载最新的系统更新吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "先等一下，我突然想起来，之前有个App好像一直在后台用我的定位，你先帮我把“淘宝”的定位权限给彻底关掉。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SetAppPermission(AppName=\"淘宝\",PermissionType=\"定位权限\",PermissionStatus=\"拒绝\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ManageAppPermission(AppName=\"淘宝\", Function=\"位置信息\", ActionType=True)",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "干得不错。现在帮我把系统更新这事儿给办了吧，直接开始升级。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SystemUpdate(ActionType=\"立即更新\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SystemUpdate(ActionType=\"升级\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{SetAppPermission(AppName=\"淘宝\",PermissionType=\"定位权限\",PermissionStatus=\"拒绝\")}",
+      "{SystemUpdate(ActionType=\"立即更新\")}"
+    ],
+    "predictions": [
+      "ManageAppPermission(AppName=\"淘宝\", Function=\"位置信息\", ActionType=True)",
+      "SystemUpdate(ActionType=\"升级\")"
+    ]
+  },
+  {
+    "time": 1.6884327940642834,
+    "memory": 1031.875,
+    "gpu_memory": 6100.25537109375,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我手机最近感觉有点乱，通知特别多，你帮我收拾一下。先把微信和抖音今天的通知都清了吧。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{CleanAppNotification(AppName=\"微信\",TimeRange=\"今天\")|CleanAppNotification(AppName=\"抖音\",TimeRange=\"今天\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ClearAppNotification(AppName=\"微信\", TimeRange=\"今天\", NotificationList=[\"微信通知\", \"抖音通知\"])",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "好，另外我准备坐飞机了，先打开飞行模式。然后帮我把QQ邮箱里那个叫“第三季度财务报告.pdf”的附件下载到本地“下载”文件夹，我待会儿在飞机上看。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{AirplaneModeOnOff(ActionType=True)|AttachmentManagement(AppName=\"QQ邮箱\",AttachmentName=\"第三季度财务报告.pdf\",OperationType=\"下载\",SavePath=\"下载文件夹\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "DownloadApp(AppName=\"QQ邮箱\", FileName=\"第三季度财务报告.pdf\", FilePath=\"~/Downloads\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{CleanAppNotification(AppName=\"微信\",TimeRange=\"今天\")|CleanAppNotification(AppName=\"抖音\",TimeRange=\"今天\")}",
+      "{AirplaneModeOnOff(ActionType=True)|AttachmentManagement(AppName=\"QQ邮箱\",AttachmentName=\"第三季度财务报告.pdf\",OperationType=\"下载\",SavePath=\"下载文件夹\")}"
+    ],
+    "predictions": [
+      "ClearAppNotification(AppName=\"微信\", TimeRange=\"今天\", NotificationList=[\"微信通知\", \"抖音通知\"])",
+      "DownloadApp(AppName=\"QQ邮箱\", FileName=\"第三季度财务报告.pdf\", FilePath=\"~/Downloads\")"
+    ]
+  },
+  {
+    "time": 1.62255665846169,
+    "memory": 1032.87109375,
+    "gpu_memory": 6105.08154296875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，我感觉手机不太安全，帮我检查一下设置。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，为了增强您手机的安全性，建议您为系统锁屏开启密码验证，并检查一下常用应用的权限。您需要现在操作吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "行，先给系统锁屏加上密码吧，然后把支付宝的定位权限给关了。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{PasswordOnOff(AppName=\"系统锁屏\", ActionType=True, PasswordType=\"密码\")|SetAppPermission(AppName=\"支付宝\", PermissionType=\"定位权限\", PermissionStatus=\"拒绝\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ManageAppPermission(AppName=\"支付宝\", Function=\"定位权限\", ActionType=\"关闭\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "嗯，再帮我把系统自动更新也关掉，我不喜欢它自己更新。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{AutoSystemUpdateOnOff(ActionType=False)}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "AutoSystemUpdateOnOff(ActionType=False)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{PasswordOnOff(AppName=\"系统锁屏\", ActionType=True, PasswordType=\"密码\")|SetAppPermission(AppName=\"支付宝\", PermissionType=\"定位权限\", PermissionStatus=\"拒绝\")}",
+      "{AutoSystemUpdateOnOff(ActionType=False)}"
+    ],
+    "predictions": [
+      "ManageAppPermission(AppName=\"支付宝\", Function=\"定位权限\", ActionType=\"关闭\")",
+      "AutoSystemUpdateOnOff(ActionType=False)"
+    ]
+  },
+  {
+    "time": 2.228008024394512,
+    "memory": 1031.46875,
+    "gpu_memory": 6099.45263671875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我准备出门了，手机电量不太够，帮我打开快充和省电模式。另外，顺便看下微信和QQ今天有啥新消息没。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ChargeModeOnOff(ActionType=True)|BatterySavingMode(ActionType=True)|CheckAppNotification(AppName=\"微信\", TimeRange=\"今天\")|CheckAppNotification(AppName=\"QQ\", TimeRange=\"今天\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "CheckAppNotification(AppName=\"QQ\", TimeRange=\"今天\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "行，知道了。对了，我电脑不用了，帮我关机。再把那个“全屏截图”的快捷键从PrtScn改成Ctrl+Alt+A吧，我老记不住。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ShutDown(DeviceType=\"电脑\")|SetShortCutKey(Function=\"全屏截图\", OldKeyCombination=\"PrtScn\", NewKeyCombination=\"Ctrl+Alt+A\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchShortCutKey(Function=\"全屏截图\", OldKeyCombination=\"PrtScn\", NewKeyCombination=\"Ctrl+Alt+A\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{ChargeModeOnOff(ActionType=True)|BatterySavingMode(ActionType=True)|CheckAppNotification(AppName=\"微信\", TimeRange=\"今天\")|CheckAppNotification(AppName=\"QQ\", TimeRange=\"今天\")}",
+      "{ShutDown(DeviceType=\"电脑\")|SetShortCutKey(Function=\"全屏截图\", OldKeyCombination=\"PrtScn\", NewKeyCombination=\"Ctrl+Alt+A\")}"
+    ],
+    "predictions": [
+      "CheckAppNotification(AppName=\"QQ\", TimeRange=\"今天\")",
+      "SwitchShortCutKey(Function=\"全屏截图\", OldKeyCombination=\"PrtScn\", NewKeyCombination=\"Ctrl+Alt+A\")"
+    ]
+  },
+  {
+    "time": 1.8388559501618147,
+    "memory": 1034.0029296875,
+    "gpu_memory": 6107.61962890625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，晚上好。帮我把手机调成夜间模式，然后开启勿扰。哦对了，顺便把系统字体也调粗一点，晚上看屏幕眼睛舒服些。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，马上为您将手机切换到夜间模式，并开启勿扰。关于字体加粗，是需要调整系统全局的字体吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对，全局的。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SetSystemTheme(ThemeType=\"夜间模式\")|QuietModeOnOff(ActionType=\"开启\")|SwitchFontWeight(ActionType=\"设置\", FontWeight=\"加粗\", AppName=\"全局\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"系统\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "不错。另外，我不想让应用随便用我的数据，把数据共享关了。还有，把手机的指纹解锁也关掉吧，就用密码就行。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SwitchDataSharing(ActionType=False)|PasswordOnOff(AppName=\"系统\", ActionType=False, PasswordType=\"指纹\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ManageAppPermission(AppName=\"系统\", Function=\"位置信息\", ActionType=False)  \nPasswordOnOff(AppName=\"系统\", ActionType=False)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{SetSystemTheme(ThemeType=\"夜间模式\")|QuietModeOnOff(ActionType=\"开启\")|SwitchFontWeight(ActionType=\"设置\", FontWeight=\"加粗\", AppName=\"全局\")}",
+      "{SwitchDataSharing(ActionType=False)|PasswordOnOff(AppName=\"系统\", ActionType=False, PasswordType=\"指纹\")}"
+    ],
+    "predictions": [
+      "SwitchFontSize(ActionType=\"设置\", AdjustLevel=\"最大\", AppName=\"系统\")",
+      "ManageAppPermission(AppName=\"系统\", Function=\"位置信息\", ActionType=False)  \nPasswordOnOff(AppName=\"系统\", ActionType=False)"
+    ]
+  },
+  {
+    "time": 1.389008717611432,
+    "memory": 1033.72265625,
+    "gpu_memory": 6106.72607421875,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "我要准备开会了，帮我把投影仪连上，然后打开文件资源管理器，顺便把微信和QQ的通知都关了，免得被打扰。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，连接投影仪和打开文件资源管理器没有问题。关于微信和QQ的通知，您是想关闭所有通知，还是只是关闭弹窗和声音呢？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "就关掉弹窗通知就行。哦对了，再帮我把浏览器全屏。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ConnectExternalDevice(DeviceType=\"投影仪\", ActionType=True)|DesktopOnOff(DesktopName=\"文件资源管理器\", ActionType=True)|ControlAppNotificationManager(AppName=\"微信\", NotificationType=\"Banner\")|ControlAppNotificationManager(AppName=\"QQ\", NotificationType=\"Banner\")|SwitchDesktopSize(DesktopName=\"浏览器\", DesktopSize=\"fullscreen\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchDesktopSize(DesktopName=\"浏览器\", DesktopSize=\"全屏\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "会议结束了，断开投影仪吧，然后帮我连上我的蓝牙耳机。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ConnectExternalDevice(DeviceType=\"投影仪\", ActionType=False)|ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ShutDown(DeviceType=\"投影仪\")  \nConnectBlueTooth(DeviceType=\"蓝牙耳机\", ActionType=True)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{ConnectExternalDevice(DeviceType=\"投影仪\", ActionType=True)|DesktopOnOff(DesktopName=\"文件资源管理器\", ActionType=True)|ControlAppNotificationManager(AppName=\"微信\", NotificationType=\"Banner\")|ControlAppNotificationManager(AppName=\"QQ\", NotificationType=\"Banner\")|SwitchDesktopSize(DesktopName=\"浏览器\", DesktopSize=\"fullscreen\")}",
+      "{ConnectExternalDevice(DeviceType=\"投影仪\", ActionType=False)|ConnectBlueTooth(DeviceType=\"耳机\", ActionType=True)}"
+    ],
+    "predictions": [
+      "SwitchDesktopSize(DesktopName=\"浏览器\", DesktopSize=\"全屏\")",
+      "ShutDown(DeviceType=\"投影仪\")  \nConnectBlueTooth(DeviceType=\"蓝牙耳机\", ActionType=True)"
+    ]
+  },
+  {
+    "time": 2.662095120176673,
+    "memory": 1037.1796875,
+    "gpu_memory": 6116.322265625,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，帮我把手机设置一下，准备明天开始办公用。先换个壁纸，要科技风的，然后把钉钉的客服消息通知打开。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，正在为您配置办公模式。科技风格的壁纸，您想从在线图库里自动推荐一张，还是从您的相册里手动选择呢？另外，钉钉的客服通知需要哪种提醒方式，比如响铃或振动？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "就在线图库里自动选一张吧，好看就行，桌面和锁屏都用这个。钉钉通知只要振动提醒。哦对了，顺便把支付宝的指纹支付功能给我打开。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SetWallPaper(OperationType=\"auto_apply\", WallpaperSource=\"online\", StylePreference=\"tech\", ApplyScope=\"both\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"CustomerService\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"Vibration\")|BiometricPasswordOnOff(AppName=\"支付宝\", ActionType=True, PasswordType=\"指纹\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BiometricPasswordOnOff(AppName=\"支付宝\", ActionType=True, PasswordType=\"指纹\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "嗯，可以了。再帮我装个五笔输入法，并且把它设为全局默认的。另外，把那个快充模式关一下，晚上充电用慢充就行。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{AddInputMethod(InputMethodName=\"五笔输入法\")|SwitchInputMethod(ActionType=\"设为默认\", AppName=\"全局\", InputMethodName=\"五笔输入法\")|ChargeModeOnOff(ActionType=False)}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "BiometricPasswordOnOff(AppName=\"支付宝\", ActionType=True, PasswordType=\"指纹\")  \nControlSound(VolumeType=\"系统音量\", ActionType=\"调到\", Percentage=50)  \nChargeModeOnOff(ActionType=False)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{SetWallPaper(OperationType=\"auto_apply\", WallpaperSource=\"online\", StylePreference=\"tech\", ApplyScope=\"both\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"CustomerService\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"Vibration\")|BiometricPasswordOnOff(AppName=\"支付宝\", ActionType=True, PasswordType=\"指纹\")}",
+      "{AddInputMethod(InputMethodName=\"五笔输入法\")|SwitchInputMethod(ActionType=\"设为默认\", AppName=\"全局\", InputMethodName=\"五笔输入法\")|ChargeModeOnOff(ActionType=False)}"
+    ],
+    "predictions": [
+      "BiometricPasswordOnOff(AppName=\"支付宝\", ActionType=True, PasswordType=\"指纹\")",
+      "BiometricPasswordOnOff(AppName=\"支付宝\", ActionType=True, PasswordType=\"指纹\")  \nControlSound(VolumeType=\"系统音量\", ActionType=\"调到\", Percentage=50)  \nChargeModeOnOff(ActionType=False)"
+    ]
+  },
+  {
+    "time": 1.6950289060672123,
+    "memory": 1042.130859375,
+    "gpu_memory": 6132.0703125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，我马上要坐好几个小时的高铁，得用一下电脑。你帮我把电脑设置成省电模式，关掉那个快充，再把电池健康保护给打开。哦对了，顺便给我随便放个小说听听，路上解解闷。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，已为您切换为慢速充电并开启电池健康保护。请问您想听什么类型的小说呢？另外，我注意到您的截图快捷键是系统默认的'PrtSc'，在当前键盘布局下可能不太方便，需要为您修改成一个更顺手的组合吗？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "嗯，科幻小说吧。截图键这个提议不错，你帮我改成 Ctrl 加 Alt 再加 S 好了。还有，把整个系统语言换成英文，我想顺便练练阅读。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ChargeModeOnOff(ActionType=False)|BatteryHealthOnOff(ActionType=True)|ControlMediaPlayback(AppName=\"voice\", ActionType=True)|SetShortCutKey(Function=\"截图\", OldKeyCombination=\"PrtSc\", NewKeyCombination=\"Ctrl+Alt+S\")|SwitchLanguage(AppName=\"系统\", LanguageType=\"英文\", ActionType=\"切换\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "SwitchShortCutKey(Function=\"截图\", OldKeyCombination=\"PrtSc\", NewKeyCombination=\"Ctrl+Alt+S\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "可以。最后再帮我办两件事，连接一下高铁上的WiFi，名字是'CRH-WiFi'，然后让我的手机也休眠吧，给它也省点电。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ConnectWlan(DeviceType=\"CRH-WiFi\", ActionType=True, Password=\"None\")|Sleep(DeviceType=\"手机\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"WiFi网络名称\", ActionType=True, DeviceSetting=\"连接\")  \nSleep(DeviceType=\"手机\")",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "密码是 aabb1122，连上就行。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{ConnectWlan(DeviceType=\"CRH-WiFi\", ActionType=True, Password=\"aabb1122\")|Sleep(DeviceType=\"手机\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"CRH-WiFi\", ActionType=True, DeviceSetting=\"连接\")",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{ChargeModeOnOff(ActionType=False)|BatteryHealthOnOff(ActionType=True)|ControlMediaPlayback(AppName=\"voice\", ActionType=True)|SetShortCutKey(Function=\"截图\", OldKeyCombination=\"PrtSc\", NewKeyCombination=\"Ctrl+Alt+S\")|SwitchLanguage(AppName=\"系统\", LanguageType=\"英文\", ActionType=\"切换\")}",
+      "{ConnectWlan(DeviceType=\"CRH-WiFi\", ActionType=True, Password=\"None\")|Sleep(DeviceType=\"手机\")}",
+      "{ConnectWlan(DeviceType=\"CRH-WiFi\", ActionType=True, Password=\"aabb1122\")|Sleep(DeviceType=\"手机\")}"
+    ],
+    "predictions": [
+      "SwitchShortCutKey(Function=\"截图\", OldKeyCombination=\"PrtSc\", NewKeyCombination=\"Ctrl+Alt+S\")",
+      "ConnectBlueTooth(DeviceType=\"WiFi网络名称\", ActionType=True, DeviceSetting=\"连接\")  \nSleep(DeviceType=\"手机\")",
+      "ConnectBlueTooth(DeviceType=\"CRH-WiFi\", ActionType=True, DeviceSetting=\"连接\")"
+    ]
+  },
+  {
+    "time": 2.1276715099811554,
+    "memory": 1036.30859375,
+    "gpu_memory": 6113.876953125,
+    "evaluation": null,
+    "conversation_trace": [
+      {
+        "role": "user",
+        "content": "小艺小艺，帮我进入工作状态。先把抖音和淘宝都关了，然后打开我的文件资源管理器。哦对了，把钉钉的客服通知设成响铃提醒，其他通知允许就行。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，正在为您关闭抖音和淘宝，并打开文件资源管理器。关于钉钉通知，是只将客服通知设为响铃，其他所有通知类型仅允许接收是吗？另外，需要连接什么外部设备吗？比如蓝牙耳机？",
+        "source": "dataset"
+      },
+      {
+        "role": "user",
+        "content": "对，就这么设置。顺便帮我连一下我的蓝牙耳机吧。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{AppOnOff(AppName=\"抖音\", ActionType=False)|AppOnOff(AppName=\"淘宝\", ActionType=False)|DesktopOnOff(DesktopName=\"文件资源管理器\", ActionType=True)|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"Allow\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"CustomerService\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"Ringing\")|ExternalDeviceControl(DeviceType=\"蓝牙耳机\", DeviceSetting=\"连接\")}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ConnectBlueTooth(DeviceType=\"蓝牙耳机\", ActionType=True)",
+        "source": "model"
+      },
+      {
+        "role": "user",
+        "content": "忙完了，现在我想放松一下。帮我把壁纸换成自动轮播的风景图，每天换一次就行，桌面和锁屏都要换。然后关掉移动数据，给我放点音乐。",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "{SetWallPaper(OperationType=\"slideshow\", StylePreference=\"风景\", ChangeFrequency=\"24\", ApplyScope=\"both\")|MobileDataOnOff(ActionType=False)|ControlMediaPlayback(AppName=\"music\", ActionType=True)}",
+        "source": "dataset"
+      },
+      {
+        "role": "assistant",
+        "content": "ControlSound(VolumeType=\"音乐\", ActionType=\"增加\", Percentage=15)",
+        "source": "model"
+      }
+    ],
+    "expected": [
+      "{AppOnOff(AppName=\"抖音\", ActionType=False)|AppOnOff(AppName=\"淘宝\", ActionType=False)|DesktopOnOff(DesktopName=\"文件资源管理器\", ActionType=True)|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"Allow\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"CustomerService\")|ControlAppNotificationManager(AppName=\"钉钉\", NotificationType=\"Ringing\")|ExternalDeviceControl(DeviceType=\"蓝牙耳机\", DeviceSetting=\"连接\")}",
+      "{SetWallPaper(OperationType=\"slideshow\", StylePreference=\"风景\", ChangeFrequency=\"24\", ApplyScope=\"both\")|MobileDataOnOff(ActionType=False)|ControlMediaPlayback(AppName=\"music\", ActionType=True)}"
+    ],
+    "predictions": [
+      "ConnectBlueTooth(DeviceType=\"蓝牙耳机\", ActionType=True)",
+      "ControlSound(VolumeType=\"音乐\", ActionType=\"增加\", Percentage=15)"
+    ]
+  }
+]
